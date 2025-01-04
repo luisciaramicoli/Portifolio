@@ -1,60 +1,107 @@
+/* Estilo principal da seção About */
 .about {
-    background-color: #f9f9f9; /* Fundo suave */
-    padding: 50px 20px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-  }
-/* Estilo do carrossel */
-.cassoussel-item {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  
-  .cassoussel-item img {
-    width: 100%;
-    height: auto;
-    border-radius: 10px;
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
-  }
-  
-  
-  .about-container {
-    max-width: 900px;
-    margin: 0 auto;
-  }
-  
-  .about-title {
-    font-size: 2.5rem;
-    color: #333;
-    margin-bottom: 20px;
-    font-family: 'Arial', sans-serif;
-  }
-  
-  .about-text {
-    font-size: 1.2rem;
-    line-height: 1.8;
-    color: #555;
-    margin-bottom: 20px;
-    text-align: justify;
-  }
-  
-  .about-text strong {
-    color: #007BFF; /* Destaque em azul */
-  }
-  
-  @media (max-width: 768px) {
-    .about-title {
-      font-size: 2rem;
-    }
-  
-    .about-text {
-      font-size: 1rem;
-    }
-  }
-  
-  
+  background-color: #f9f9f9; /* Fundo suave */
+  padding: 50px 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  flex-direction: column;
+}
 
-  
+/* Container da seção */
+.about-container {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+/* Estilo do título "Sobre Mim" */
+.about-title {
+  font-size: 2.5rem;
+  color: #333;
+  margin-bottom: 20px;
+  margin-top: 2rem;
+  font-family: 'Arial', sans-serif;
+}
+/* Estilo para a imagem circular de perfil */
+.profile-circle {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-bottom: 30px;
+  margin-top: 4rem;
+}
+
+.profile-img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover; /* Faz a imagem se ajustar dentro do círculo */
+  border: 4px solid #007BFF; /* Borda azul */
+}
+
+.profile-info {
+  text-align: center;
+  margin-top: 10px;
+}
+
+.profile-name {
+  font-size: 1.5rem;
+  color: #333;
+  font-weight: bold;
+}
+
+.profile-location {
+  font-size: 1.1rem;
+  color: #555;
+}
+
+/* Estilo do texto sobre mim */
+.about-text {
+  font-size: 1.2rem;
+  line-height: 1.8;
+  color: #555;
+  margin-bottom: 20px;
+  text-align: justify;
+}
+
+.about-text strong {
+  color: #007BFF; /* Destaque em azul */
+}
+
+/* Estilo do carrossel */
+.carousel-item img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2); /* Adicionando sombra para um efeito de profundidade */
+}
+
+/* Estilo da legenda do carrossel */
+.carousel-caption {
+  background-color: rgba(0, 0, 0, 0.5); /* Opacidade para a legenda */
+  padding: 10px;
+  color: #fff; /* Cor da legenda */
+  font-size: 1.2rem;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+  .about-title {
+    font-size: 2rem;
+  }
+
+  .about-text {
+    font-size: 1rem;
+  }
+
+  /* Ajustar o tamanho do carrossel em telas menores */
+  .carousel-item img {
+    max-height: 400px; /* Definindo altura máxima para as imagens do carrossel */
+  }
+
+  .carousel-caption {
+    font-size: 1rem;
+  }
+}
