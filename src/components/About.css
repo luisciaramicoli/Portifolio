@@ -72,12 +72,12 @@
 
 /* Estilo do carrossel */
 .carousel-item img {
-  width: 100%;
-  height: auto;
+  width: 600px; /* Largura fixa */
+  height: 400px; /* Altura fixa */
+  object-fit: cover; /* Ajusta o conteúdo sem distorcer */
   border-radius: 8px;
   box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2); /* Adicionando sombra para um efeito de profundidade */
 }
-
 /* Estilo da legenda do carrossel */
 .carousel-caption {
   background-color: rgba(0, 0, 0, 0.5); /* Opacidade para a legenda */

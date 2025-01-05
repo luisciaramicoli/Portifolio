@@ -17,7 +17,7 @@ const About = () => {
             alt="Imagem 1"
           />
           <Carousel.Caption>
-            <h3>Imagem 1</h3>
+            <h3>Bom dia São Paulo</h3>
           </Carousel.Caption>
         </Carousel.Item>
         <Carousel.Item>
@@ -27,7 +27,7 @@ const About = () => {
             alt="Imagem 2"
           />
           <Carousel.Caption>
-            <h3>Imagem 2</h3>
+            <h3>CPBR16</h3>
           </Carousel.Caption>
         </Carousel.Item>
         <Carousel.Item>
@@ -37,7 +37,27 @@ const About = () => {
             alt="Imagem 3"
           />
           <Carousel.Caption>
-            <h3>Imagem 3</h3>
+            <h3>CPBR16</h3>
+          </Carousel.Caption>
+        </Carousel.Item>
+        <Carousel.Item>
+          <img
+            className="d-block w-100"
+            src="feteps.jpg"
+            alt="Imagem 3"
+          />
+          <Carousel.Caption>
+            <h3>FETEPS</h3>
+          </Carousel.Caption>
+        </Carousel.Item>
+        <Carousel.Item>
+          <img
+            className="d-block w-100"
+            src="campus15.jpg"
+            alt="Imagem 3"
+          />
+          <Carousel.Caption>
+            <h3>CPBR15</h3>
           </Carousel.Caption>
         </Carousel.Item>
       </Carousel>

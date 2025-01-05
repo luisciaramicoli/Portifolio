@@ -3,9 +3,19 @@ import './Projects.css';
 
 const Projects = () => {
   const projects = [
-    { id: 1, title: 'Projeto 1', description: 'Uma aplicação incrível para resolver problemas do dia a dia.' },
-    { id: 2, title: 'Projeto 2', description: 'Um sistema avançado para gerenciamento eficiente.' },
-    { id: 3, title: 'Projeto 3', description: 'Uma ferramenta criativa para facilitar a vida de desenvolvedores.' },
+    {
+      id: 1,
+      title: 'SAT',
+      description: 'Sistema Administrativo Tecnológico, projeto de TCC apresentado no ano de 2024 na qual tem como objetivo administrar pequenas e médias empresas.',
+      image: '/novaDash.png', // Caminho para a imagem do projeto SAT
+    },
+    {
+      id: 2,
+      title: 'Bengala Multissensorial',
+      description: 'A Bengala Multissensorial tem como objetivo ajudar e auxiliar pessoas com deficiência visual, na qual foi apresentado em diversas feiras científicas e entrevistas em canais de TV.',
+      image: '/bengala.jpeg', // Caminho para a imagem do projeto Bengala
+    },
+  
   ];
 
   return (
@@ -16,6 +26,11 @@ const Projects = () => {
           {projects.map((project) => (
             <div key={project.id} className="project-card">
               <h3 className="project-title">{project.title}</h3>
+              <img
+                src={project.image}
+                alt={project.title}
+                className="project-image"
+              />
               <p className="project-description">{project.description}</p>
             </div>
           ))}

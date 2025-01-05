@@ -35,6 +35,16 @@
     text-align: left;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
   }
+ 
+  
+  .project-image {
+    width: 100%;
+    max-width: 600px;
+    height: auto;
+    margin: 15px 0;
+    border-radius: 8px; /* Bordas arredondadas */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra para destaque */
+  }
   
   .project-card:hover {
     transform: translateY(-5px);
