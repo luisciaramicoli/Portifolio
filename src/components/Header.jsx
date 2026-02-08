@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 import './Header.css';
 
 const Header = () => {
@@ -16,13 +16,15 @@ const Header = () => {
           alt="Foto de perfil"
           className="profile_img"
         />
+        <span className="logo-text">Luis Gustavo</span>
       </div>
-      <div className="hamburger" onClick={toggleMenu}>
+      <div className={`hamburger ${isMenuOpen ? 'active' : ''}`} onClick={toggleMenu}>
         <span></span>
         <span></span>
         <span></span>
       </div>
       <nav className={isMenuOpen ? 'active' : ''}>
+        <a href="#hero">Início</a>
         <a href="#about">Sobre Mim</a>
         <a href="#projects">Projetos</a>
         <a href="#contact">Contato</a>

@@ -1,0 +1,181 @@
+Currículo do Sistema de Currículos Lattes (Luis Gustavo B...
+2 of 6
+https://buscatextual.cnpq.br/buscatextual/visualizacv.do?...
+Luis Gustavo Bonﬁm Ciaramicoli
+Endereço para acessar este CV: http://lattes.cnpq.br/1341430292224425
+ID Lattes: 1341430292224425
+Última atualização do currículo em 25/03/2025
+Possui curso-tecnico-proﬁssionalizante em Desenvolvimento de Sistemas pela
+ETEC Massuyuki Kawano(2024), ensino-fundamental-primeiro-graupela EE Prof.ª
+Esther Veris Cerpe(2017) e ensino-medio-segundo-graupela ETEC Massuyuki
+Kawano(2021).
+Atualmente
+é
+da
+ETEC
+Massuyuki
+Kawano.
+(Texto
+gerado
+automaticamente pela aplicação CVLattes)
+Identiﬁcação
+NomeLuis Gustavo Bonﬁm Ciaramicoli
+Nome em citações
+bibliográﬁcasCIARAMICOLI, L. G. B.;CIARAMICOLI, LUIS GUSTAVO BONFIM
+Lattes iD
+http://lattes.cnpq.br/1341430292224425
+País de Nacionalidade
+Brasil
+Formação acadêmica/titulação
+2025Graduação em andamento em Sistemas Inteligentes.
+FATEC - FACULDADE DE TEOLOGIA E CIÊNCIAS, FATEC, Brasil.
+2023 - 2024Curso técnico/proﬁssionalizante em Desenvolvimento de Sistemas.
+ETEC Massuyuki Kawano, ETECMW, Brasil.
+2018 - 2021Ensino Médio (2º grau).
+ETEC Massuyuki Kawano, ETECMW, Brasil.
+2012 - 2017Ensino Fundamental (1º grau).
+EE Prof.ª Esther Veris Cerpe, EEPEVC, Brasil.
+Atuação Proﬁssional
+ETEC Massuyuki Kawano, ETECMW, Brasil.
+Vínculo institucional
+2022 - Atual
+Vínculo: , Enquadramento Funcional:
+09/01/2026, 13:59Currículo do Sistema de Currículos Lattes (Luis Gustavo B...
+3 of 6
+https://buscatextual.cnpq.br/buscatextual/visualizacv.do?...
+Projetos de desenvolvimento
+2022 - Atual
+Bengala Mulrissensorial
+Descrição: A inclusão de pessoas com deﬁciência visual no contexto
+brasileiro é uma demandacrucial, porém frequentemente relegada
+pela sociedade. Este resumo enfatiza aurgência de adotar
+tecnologias que facilitem a vida desses indivíduos. Nessesentido,
+surge a bengala multissensorial Canna como uma resposta
+inovadora parapromover a independência e a mobilidade dessas
+pessoas. Equipada com sensoresavançados, como Arduino e
+Esp8266, a bengala é capaz de detectar obstáculos noambiente,
+oferecendo uma nova camada de segurança e autonomia.O projeto
+nãose limitou apenas ao desenvolvimento do produto, mas
+também incluiu umaextensa fase de pesquisa de mercado,
+prototipagem, desenvolvimento iterativo etestes em colaboração
+com deﬁcientes visuais. Essa abordagem centrada nousuário
+garantiu que a bengala atendesse às necessidades especíﬁcas
+dacomunidade e proporcionasse uma experiência realmente útil e
+eﬁcaz. Além desua funcionalidade principal de detecção de
+obstáculos, a bengala multissensorialCanna foi projetada para ser
+ergonomicamente confortável, reduzindo a fadiga dousuário
+durante o uso prolongado. Essa consideração pelo conforto do
+usuárioamplia ainda mais a utilidade da bengala, especialmente
+para pessoas idosas queenfrentam desaﬁos de mobilidade devido
+à idade avançada..
+Situação: Em andamento; Natureza: Desenvolvimento.
+Alunos envolvidos: Graduação: (4) / Doutorado: (1) .
+Integrantes: Luis Gustavo Bonﬁm Ciaramicoli - Coordenador / Luis
+Guilherme Damasco de Almeida - Integrante / Felipe Rafael Santos
+Soares - Integrante / Marcio Gabriel Schnor Mazega - Integrante /
+Michele Paoline de Marins Ulhoa Ruiz - Integrante.
+Idiomas
+PortuguêsCompreende Bem, Fala Bem, Lê Bem, Escreve Bem.
+InglêsCompreende Razoavelmente, Fala Pouco, Lê Razoavelmente,
+Escreve Pouco.
+Produções
+Produção bibliográﬁca
+Artigos completos publicados em periódicos
+Ordenar por
+Ordem Cronológica
+1.
+SOARES, FELIPE RAFAEL SANTOS ; SANCHES, LUANA
+GOULART ; ALMEIDA, LUIS GUILHERME DAMASCO DE ;
+CIARAMICOLI, LUIS GUSTAVO BONFIM . MULTISSENSORIAL
+WALK: CANNA Project. Journal of Engineering Research, v. 3, p.
+2-4, 2023.
+09/01/2026, 13:59Currículo do Sistema de Currículos Lattes (Luis Gustavo B...
+4 of 6
+Livros publicados/organizados ou edições
+1.
+https://buscatextual.cnpq.br/buscatextual/visualizacv.do?...
+CIARAMICOLI, L. G. B.; ALMEIDA, L. G. D. ; SOARES, F. R.
+S. ; SANCHES, L. G. . Demandas para a educação brasileira no
+século XXI: desaﬁos emergentes. 1. ed. Ponta Grossa - PR: Atena
+Editora, 2023. 101p .
+Apresentações de Trabalho
+1.CIARAMICOLI, L. G. B.; ALMEIDA, L. G. D. ; SOARES, F. R. S. .
+Bengala Mulrissensorial. 2024. (Apresentação de Trabalho/
+Conferência ou palestra).
+2.CIARAMICOLI, L. G. B.; ALMEIDA, L. G. D. ; SOARES, F. R. S. .
+Bengala Mulrissensorial. 2024. (Apresentação de Trabalho/
+Outra).
+3.CIARAMICOLI, L. G. B.; ALMEIDA, L. G. D. ; SOARES, F. R. S. ;
+SANCHES, L. G. . Bengala Mulrissensorial. 2023. (Apresentação
+de Trabalho/Congresso).
+4.CIARAMICOLI, L. G. B.; ALMEIDA, L. G. D. ; SANCHES, L. G. ;
+SOARES, F. R. S. . Bengala Mulrissensorial. 2023. (Apresentação
+de Trabalho/Conferência ou palestra).
+Produção técnica
+Entrevistas, mesas redondas, programas e comentários na mídia
+1.
+CIARAMICOLI, LUIS GUSTAVO BONFIM; ALMEIDA, L. G. D. ;
+SOARES, F. R. S. ; SANCHES, L. G. . Estudantes criam bengala
+multissensorial para pessoas com deﬁciência visual. 2023.
+(Programa de rádio ou TV/Entrevista).
+Demais tipos de produção técnica
+Eventos
+09/01/2026, 13:59Currículo do Sistema de Currículos Lattes (Luis Gustavo B...
+5 of 6
+https://buscatextual.cnpq.br/buscatextual/visualizacv.do?...
+Participação em eventos, congressos, exposições e feiras
+1.Campus Party Brasil 16. Bengala Mulrissensorial. 2024. (Feira).
+2.Feira Tecnológica do Centro Paula Souza (FETEPS). Bengala
+Mulrissensorial. 2024. (Feira).
+3.Solve for
+(Outra).
+4.Campus Party Brasil 15,. Bengala Mulrissensorial. 2023. (Feira).
+5.XVI CONGRESSO DE INICIAÇÃO CIENTÍFICA JÚNIOR DO CENTRO
+UNIVERSITÁRIO DE ADAMANTINA,. Bengala Mulrissensorial.
+2023. (Congresso).
+6.XV CONGRESSO DE INICIAÇÃO CIENTÍFICA JÚNIOR DO CENTRO
+UNIVERSITÁRIO DE ADAMANTINA,. Bengala Mulrissensorial.
+2022. (Congresso).
+Tomorrow
+Brasil.Bengala
+Mulrissensorial.
+2024.
+Inovação
+Projeto de desenvolvimento tecnológico
+2022 - Atual
+Bengala Mulrissensorial
+Descrição: A inclusão de pessoas com deﬁciência visual no contexto
+brasileiro é uma demandacrucial, porém frequentemente relegada
+pela sociedade. Este resumo enfatiza aurgência de adotar
+tecnologias que facilitem a vida desses indivíduos. Nessesentido,
+surge a bengala multissensorial Canna como uma resposta
+inovadora parapromover a independência e a mobilidade dessas
+pessoas. Equipada com sensoresavançados, como Arduino e
+Esp8266, a bengala é capaz de detectar obstáculos noambiente,
+oferecendo uma nova camada de segurança e autonomia.O projeto
+nãose limitou apenas ao desenvolvimento do produto, mas
+também incluiu umaextensa fase de pesquisa de mercado,
+prototipagem, desenvolvimento iterativo etestes em colaboração
+com deﬁcientes visuais. Essa abordagem centrada nousuário
+garantiu que a bengala atendesse às necessidades especíﬁcas
+dacomunidade e proporcionasse uma experiência realmente útil e
+eﬁcaz. Além desua funcionalidade principal de detecção de
+obstáculos, a bengala multissensorialCanna foi projetada para ser
+ergonomicamente confortável, reduzindo a fadiga dousuário
+durante o uso prolongado. Essa consideração pelo conforto do
+usuárioamplia ainda mais a utilidade da bengala, especialmente
+para pessoas idosas queenfrentam desaﬁos de mobilidade devido
+à idade avançada..
+Situação: Em andamento; Natureza: Desenvolvimento.
+Alunos envolvidos: Graduação: (4) / Doutorado: (1) .
+Integrantes: Luis Gustavo Bonﬁm Ciaramicoli - Coordenador / Luis
+Guilherme Damasco de Almeida - Integrante / Felipe Rafael Santos
+09/01/2026, 13:59Currículo do Sistema de Currículos Lattes (Luis Gustavo B...
+https://buscatextual.cnpq.br/buscatextual/visualizacv.do?...
+Soares - Integrante / Marcio Gabriel Schnor Mazega - Integrante /
+Michele Paoline de Marins Ulhoa Ruiz - Integrante.
+6 of 6
+Página gerada pelo Sistema Currículo Lattes em 09/01/2026 às 16:59:31
+Somente os dados identiﬁcados como públicos pelo autor são apresentados na consulta do seu
+Currículo Lattes.
+Conﬁguração de privacidade na Plataforma Lattes

@@ -1,107 +1,162 @@
-/* Estilo principal da seção About */
 .about {
-  background-color: #f9f9f9; /* Fundo suave */
-  padding: 50px 20px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  background-color: #ffffff;
+  padding: 80px 20px;
   text-align: center;
-  flex-direction: column;
 }
 
-/* Container da seção */
 .about-container {
   max-width: 900px;
   margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 50px;
+  align-items: center;
 }
 
-/* Estilo do título "Sobre Mim" */
 .about-title {
-  font-size: 2.5rem;
-  color: #333;
-  margin-bottom: 20px;
-  margin-top: 2rem;
-  font-family: 'Arial', sans-serif;
-}
-/* Estilo para a imagem circular de perfil */
-.profile-circle {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
+  font-size: 36px;
+  color: #343a40;
   margin-bottom: 30px;
-  margin-top: 4rem;
+  grid-column: 1 / -1;
+}
+
+.profile-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
 }
 
 .profile-img {
-  width: 150px;
-  height: 150px;
+  width: 180px;
+  height: 180px;
   border-radius: 50%;
-  object-fit: cover; /* Faz a imagem se ajustar dentro do círculo */
-  border: 4px solid #007BFF; /* Borda azul */
+  object-fit: cover;
+  border: 4px solid #007bff;
 }
 
 .profile-info {
   text-align: center;
-  margin-top: 10px;
 }
 
 .profile-name {
-  font-size: 1.5rem;
-  color: #333;
+  font-size: 24px;
   font-weight: bold;
+  color: #343a40;
 }
 
 .profile-location {
-  font-size: 1.1rem;
-  color: #555;
+  font-size: 18px;
+  color: #6c757d;
 }
 
-/* Estilo do texto sobre mim */
+.about-text-section {
+  text-align: left;
+}
+
 .about-text {
-  font-size: 1.2rem;
-  line-height: 1.8;
-  color: #555;
+  font-size: 18px;
+  line-height: 1.6;
+  color: #6c757d;
   margin-bottom: 20px;
-  text-align: justify;
 }
 
 .about-text strong {
-  color: #007BFF; /* Destaque em azul */
+  color: #007bff;
 }
 
-/* Estilo do carrossel */
-.carousel-item img {
-  width: 600px; /* Largura fixa */
-  height: 400px; /* Altura fixa */
-  object-fit: cover; /* Ajusta o conteúdo sem distorcer */
+.info-section {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+  text-align: left;
+}
+
+.info-column {
+  background-color: #f8f9fa;
+  padding: 20px;
   border-radius: 8px;
-  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2); /* Adicionando sombra para um efeito de profundidade */
-}
-/* Estilo da legenda do carrossel */
-.carousel-caption {
-  background-color: rgba(0, 0, 0, 0.5); /* Opacidade para a legenda */
-  padding: 10px;
-  color: #fff; /* Cor da legenda */
-  font-size: 1.2rem;
 }
 
-/* Responsividade */
+.info-title {
+  font-size: 22px;
+  color: #007bff;
+  margin-bottom: 15px;
+}
+
+.info-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  color: #6c757d;
+}
+
+.info-list li {
+  margin-bottom: 10px;
+}
+
+.events-section {
+  text-align: left;
+  background-color: #f8f9fa;
+  padding: 20px;
+  border-radius: 8px;
+}
+
+.carousel-section {
+  grid-column: 1 / -1;
+  margin-top: 50px;
+}
+
+.carousel-item img {
+  width: 100%;
+  height: 500px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.carousel-caption {
+  background-color: rgba(0, 0, 0, 0.6);
+  padding: 20px;
+  border-radius: 8px;
+}
+
+.carousel-caption h3 {
+  font-size: 24px;
+  font-weight: bold;
+}
+
 @media (max-width: 768px) {
+  .about-container {
+    grid-template-columns: 1fr;
+    gap: 30px;
+  }
+
   .about-title {
-    font-size: 2rem;
+    font-size: 28px;
+  }
+
+  .profile-img {
+    width: 150px;
+    height: 150px;
+  }
+
+  .profile-name {
+    font-size: 20px;
+  }
+
+  .profile-location {
+    font-size: 16px;
   }
 
   .about-text {
-    font-size: 1rem;
+    font-size: 16px;
   }
 
-  /* Ajustar o tamanho do carrossel em telas menores */
+  .info-section {
+    grid-template-columns: 1fr;
+  }
+
   .carousel-item img {
-    max-height: 400px; /* Definindo altura máxima para as imagens do carrossel */
-  }
-
-  .carousel-caption {
-    font-size: 1rem;
+    height: 400px;
   }
 }

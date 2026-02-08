@@ -1,4 +1,4 @@
-import React from 'react';
+import { motion } from 'framer-motion';
 import './Contact.css';
 
 const Contact = () => {
@@ -27,12 +27,26 @@ const Contact = () => {
 
         <div className="social-media">
           <p>Redes Sociais:</p>
-          <a href="https://github.com/luisciaramicoli" target="_blank" rel="noopener noreferrer" className="social-link">
+          <motion.a
+            href="https://github.com/luisciaramicoli"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="social-link"
+            whileHover={{ scale: 1.1 }}
+            transition={{ duration: 0.2 }}
+          >
             GitHub
-          </a>
-          <a href="https://www.linkedin.com/in/luis-g-a22657283" target="_blank" rel="noopener noreferrer" className="social-link">
+          </motion.a>
+          <motion.a
+            href="https://www.linkedin.com/in/luis-g-a22657283"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="social-link"
+            whileHover={{ scale: 1.1 }}
+            transition={{ duration: 0.2 }}
+          >
             LinkedIn
-          </a>
+          </motion.a>
         </div>
       </div>
     </section>
