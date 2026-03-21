@@ -1,50 +1,46 @@
 import { useEffect } from 'react';
-import gsap from 'gsap';
-import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import Header from './components/Header';
 import Hero from './components/Hero';
 import About from './components/About';
 import Projects from './components/Projects';
 import Contact from './components/Contact';
 import Footer from './components/Footer';
+import CustomCursor from './components/CustomCursor';
+import ScrollProgress from './components/ScrollProgress';
 import './App.css';
 
-gsap.registerPlugin(ScrollTrigger);
-
-function App() {
+const App = () => {
   useEffect(() => {
-    gsap.utils.toArray('main > section').forEach((section) => {
-      gsap.from(section, {
-        opacity: 0,
-        y: 50,
-        duration: 1,
-        scrollTrigger: {
-          trigger: section,
-          start: 'top 80%',
-          toggleActions: 'play none none none',
-        },
-      });
-    });
+    // Forçar o scroll para o topo ao recarregar
+    if ('scrollRestoration' in window.history) {
+      window.history.scrollRestoration = 'manual';
+    }
+    
+    // Garantir scroll no topo com instant para evitar flash
+    window.scrollTo({ top: 0, left: 0, behavior: 'instant' });
+    
+    // Fallback com pequeno delay
+    const timer = setTimeout(() => {
+      window.scrollTo(0, 0);
+    }, 50);
+
+    return () => clearTimeout(timer);
   }, []);
 
   return (
-    <div>
+    <div className="App">
+      <ScrollProgress />
+      <CustomCursor />
       <Header />
-      <Hero />
       <main>
-        <section id="about">
-          <About />
-        </section>
-        <section id="projects">
-          <Projects />
-        </section>
-        <section id="contact">
-          <Contact />
-        </section>
+        <Hero />
+        <About />
+        <Projects />
+        <Contact />
       </main>
       <Footer />
     </div>
   );
-}
+};
 
 export default App;
