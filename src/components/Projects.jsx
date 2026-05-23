@@ -132,10 +132,11 @@ const ProjectCard = ({ project, index, onOpen }) => {
       onMouseLeave={handleMouseLeave}
       style={{ rotateX, rotateY, transformStyle: "preserve-3d" }}
       layout
-      initial={{ opacity: 0, scale: 0.9 }}
-      animate={{ opacity: 1, scale: 1 }}
-      exit={{ opacity: 0, scale: 0.9 }}
-      transition={{ duration: 0.4 }}
+      variants={{
+        hidden: { opacity: 0, y: 30 },
+        visible: { opacity: 1, y: 0 }
+      }}
+      transition={{ duration: 0.6, ease: "easeOut" }}
     >
       <div className="project-image-container" style={{ transform: "translateZ(40px)" }}>
         <img src={project.image} alt={project.title} className="project-img" />
@@ -284,7 +285,21 @@ const Projects = () => {
           </div>
         </div>
 
-        <motion.div layout className="projects-grid" style={{ perspective: "1000px" }}>
+        <motion.div 
+          layout 
+          className="projects-grid" 
+          style={{ perspective: "1000px" }}
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true, amount: 0.2 }}
+          variants={{
+            visible: {
+              transition: {
+                staggerChildren: 0.2
+              }
+            }
+          }}
+        >
           <AnimatePresence mode="popLayout">
             {filteredProjects.map((project, index) => (
               <ProjectCard key={project.id} project={project} index={index} onOpen={setSelectedProject} />

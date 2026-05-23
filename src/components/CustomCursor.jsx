@@ -5,6 +5,7 @@ import './CustomCursor.css';
 const CustomCursor = () => {
   const [mousePosition, setMousePosition] = useState({ x: 0, y: 0 });
   const [isHovered, setIsHovered] = useState(false);
+  const [isText, setIsText] = useState(false);
 
   useEffect(() => {
     const handleMouseMove = (e) => {
@@ -12,17 +13,23 @@ const CustomCursor = () => {
     };
 
     const handleMouseOver = (e) => {
-      if (
-        e.target.tagName === 'A' || 
-        e.target.tagName === 'BUTTON' || 
-        e.target.closest('.project-card') || 
-        e.target.closest('.cv-button') ||
-        e.target.closest('.method-item')
-      ) {
-        setIsHovered(true);
-      } else {
-        setIsHovered(false);
-      }
+      const target = e.target;
+      
+      const isInteractive = 
+        target.tagName === 'A' || 
+        target.tagName === 'BUTTON' || 
+        target.closest('.project-card') || 
+        target.closest('.cv-button') ||
+        target.closest('.social-icon-link') ||
+        target.closest('.btn');
+
+      const isTextBlock = 
+        target.tagName === 'H1' || 
+        target.tagName === 'H2' || 
+        target.classList.contains('text-gradient');
+
+      setIsHovered(isInteractive);
+      setIsText(isTextBlock);
     };
 
     window.addEventListener('mousemove', handleMouseMove);
@@ -41,7 +48,8 @@ const CustomCursor = () => {
         animate={{
           x: mousePosition.x - 4,
           y: mousePosition.y - 4,
-          scale: isHovered ? 2.5 : 1,
+          scale: isHovered ? 2.5 : isText ? 1.5 : 1,
+          backgroundColor: isText ? '#8b5cf6' : '#3b82f6'
         }}
         transition={{ type: 'spring', damping: 30, stiffness: 500, mass: 0.5 }}
       />
@@ -50,8 +58,9 @@ const CustomCursor = () => {
         animate={{
           x: mousePosition.x - 16,
           y: mousePosition.y - 16,
-          scale: isHovered ? 1.5 : 1,
-          opacity: isHovered ? 0.3 : 1,
+          scale: isHovered ? 1.8 : isText ? 0.5 : 1,
+          opacity: isHovered ? 0.3 : 0.8,
+          borderColor: isText ? '#8b5cf6' : '#3b82f6'
         }}
         transition={{ type: 'spring', damping: 20, stiffness: 200, mass: 0.8 }}
       />

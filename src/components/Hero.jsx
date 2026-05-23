@@ -44,9 +44,12 @@ const MagneticButton = ({ children, className, href }) => {
 };
 
 const Hero = () => {
+  const name = "Ciaramicoli";
+  
   return (
     <section id="hero" className="hero">
       <Scene3D />
+      <div className="spotlight"></div>
       
       <div className="hero-container section-container">
         <motion.div 
@@ -72,14 +75,30 @@ const Hero = () => {
             transition={{ delay: 0.3, duration: 0.8 }}
           >
             Luis <br />
-            <span className="text-gradient">Ciaramicoli</span>
+            <span className="text-gradient">
+              {name.split("").map((char, index) => (
+                <motion.span
+                  key={index}
+                  initial={{ opacity: 0, y: 20 }}
+                  animate={{ opacity: 1, y: 0 }}
+                  transition={{
+                    delay: 0.5 + index * 0.05,
+                    duration: 0.5,
+                    ease: "easeOut"
+                  }}
+                  style={{ display: "inline-block" }}
+                >
+                  {char}
+                </motion.span>
+              ))}
+            </span>
           </motion.h1>
           
           <motion.p 
             className="hero-subtitle"
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
-            transition={{ delay: 0.5, duration: 0.8 }}
+            transition={{ delay: 1.2, duration: 0.8 }}
           >
             <strong>Sistemas Inteligentes & IA</strong>. 
             Bolsista de Iniciação Científica FAPESP, focado em transformar 
@@ -90,7 +109,7 @@ const Hero = () => {
             className="hero-actions"
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
-            transition={{ delay: 0.7 }}
+            transition={{ delay: 1.4 }}
           >
             <MagneticButton href="#projects" className="btn btn-primary">
               Ver Projetos <ArrowRight size={18} />
@@ -104,7 +123,7 @@ const Hero = () => {
             className="hero-socials"
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
-            transition={{ delay: 1 }}
+            transition={{ delay: 1.6 }}
           >
             <motion.a 
               href="https://github.com/luisciaramicoli" 
@@ -144,7 +163,7 @@ const Hero = () => {
         className="scroll-indicator"
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
-        transition={{ delay: 1.5, duration: 1 }}
+        transition={{ delay: 2, duration: 1 }}
       >
         <div className="mouse">
           <div className="wheel"></div>
