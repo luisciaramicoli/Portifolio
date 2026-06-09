@@ -14,18 +14,18 @@ const CustomCursor = () => {
 
     const handleMouseOver = (e) => {
       const target = e.target;
-      
-      const isInteractive = 
-        target.tagName === 'A' || 
-        target.tagName === 'BUTTON' || 
-        target.closest('.project-card') || 
+
+      const isInteractive =
+        target.tagName === 'A' ||
+        target.tagName === 'BUTTON' ||
+        target.closest('.project-card') ||
         target.closest('.cv-button') ||
         target.closest('.social-icon-link') ||
         target.closest('.btn');
 
-      const isTextBlock = 
-        target.tagName === 'H1' || 
-        target.tagName === 'H2' || 
+      const isTextBlock =
+        target.tagName === 'H1' ||
+        target.tagName === 'H2' ||
         target.classList.contains('text-gradient');
 
       setIsHovered(isInteractive);

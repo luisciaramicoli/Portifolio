@@ -37,6 +37,7 @@ const About = () => {
   const timelineY = useTransform(scrollYProgress, [0, 1], ["0%", "100%"]);
 
   const achievements = [
+    { year: '2026', title: 'Estágio na Movement (Brudden)', description: 'Inovação: Discovery, prototipação e desenvolvimento mobile com Flutter.', type: 'Estágio' },
     { year: '2026', title: 'climAgro / CentralAgro', description: 'IA especializada para análise meteorológica agrícola.', type: 'Trabalho' },
     { year: '2025', title: 'Bolsista FAPESP', description: 'Pesquisa em automatização de cientometria e LLMs.', type: 'Pesquisa' },
     { year: '2024', title: 'Campus Party 16', description: 'Bengala Multissensorial Canna em destaque.', type: 'Evento' },
@@ -45,6 +46,7 @@ const About = () => {
   ];
 
   const skills = [
+    { name: 'Flutter', category: 'Mobile' },
     { name: 'Python', category: 'Backend' },
     { name: 'FastAPI', category: 'API' },
     { name: 'React', category: 'Frontend' },
