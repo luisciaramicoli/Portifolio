@@ -331,7 +331,7 @@ const Projects = () => {
                 whileInView={{ opacity: 1, x: 0 }}
                 viewport={{ once: true }}
                 transition={{ delay: index * 0.1 }}
-                whileHover={{ x: 15, backgroundColor: "rgba(59, 130, 246, 0.1)" }}
+                whileHover={{ x: 15, backgroundColor: "rgba(34, 197, 94, 0.1)" }}
               >
                 <div className="pub-icon-wrapper">
                   <FileText size={20} className="pub-icon" />

@@ -45,20 +45,20 @@ const MagneticButton = ({ children, className, href }) => {
 
 const Hero = () => {
   const name = "Ciaramicoli";
-  
+
   return (
     <section id="hero" className="hero">
       <Scene3D />
       <div className="spotlight"></div>
-      
+
       <div className="hero-container section-container">
-        <motion.div 
+        <motion.div
           className="hero-content"
           initial={{ opacity: 0, x: -50 }}
           animate={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.8, ease: "easeOut" }}
         >
-          <motion.div 
+          <motion.div
             className="hero-badge"
             initial={{ opacity: 0, scale: 0.9 }}
             animate={{ opacity: 1, scale: 1 }}
@@ -67,8 +67,8 @@ const Hero = () => {
             <span className="badge-dot"></span>
             Disponível para Pesquisa & Desenvolvimento
           </motion.div>
-          
-          <motion.h1 
+
+          <motion.h1
             className="hero-title"
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
@@ -93,19 +93,18 @@ const Hero = () => {
               ))}
             </span>
           </motion.h1>
-          
-          <motion.p 
+
+          <motion.p
             className="hero-subtitle"
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ delay: 1.2, duration: 0.8 }}
           >
-            <strong>Sistemas Inteligentes & IA</strong>. 
-            Bolsista de Iniciação Científica FAPESP, focado em transformar 
-            o agronegócio e a acessibilidade através da tecnologia.
+            <strong>Sistemas Inteligentes & IA</strong>.
+            Estágiario em inovação na Movement (Brudden), focado em desenvolvimento de novos produtos e soluções.
           </motion.p>
-          
-          <motion.div 
+
+          <motion.div
             className="hero-actions"
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
@@ -119,37 +118,37 @@ const Hero = () => {
             </MagneticButton>
           </motion.div>
 
-          <motion.div 
+          <motion.div
             className="hero-socials"
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ delay: 1.6 }}
           >
-            <motion.a 
-              href="https://github.com/luisciaramicoli" 
-              target="_blank" 
-              rel="noopener noreferrer" 
-              className="social-icon-link" 
+            <motion.a
+              href="https://github.com/luisciaramicoli"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="social-icon-link"
               title="GitHub"
               whileHover={{ scale: 1.2, rotate: 10 }}
             >
               <Github size={20} />
             </motion.a>
-            <motion.a 
-              href="https://www.linkedin.com/in/luis-ciaramicoli/" 
-              target="_blank" 
-              rel="noopener noreferrer" 
-              className="social-icon-link" 
+            <motion.a
+              href="https://www.linkedin.com/in/luis-ciaramicoli/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="social-icon-link"
               title="LinkedIn"
               whileHover={{ scale: 1.2, rotate: -10 }}
             >
               <Linkedin size={20} />
             </motion.a>
-            <motion.a 
-              href="http://lattes.cnpq.br/1341430292224425" 
-              target="_blank" 
-              rel="noopener noreferrer" 
-              className="social-icon-link" 
+            <motion.a
+              href="http://lattes.cnpq.br/1341430292224425"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="social-icon-link"
               title="Lattes"
               whileHover={{ scale: 1.2, rotate: 10 }}
             >
@@ -159,7 +158,7 @@ const Hero = () => {
         </motion.div>
       </div>
 
-      <motion.div 
+      <motion.div
         className="scroll-indicator"
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}

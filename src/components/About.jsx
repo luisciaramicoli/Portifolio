@@ -13,9 +13,9 @@ const SkillItem = ({ skill, index }) => {
       transition={{ delay: index * 0.05 }}
       whileHover={{ 
         y: -10,
-        backgroundColor: "rgba(59, 130, 246, 0.15)",
+        backgroundColor: "rgba(34, 197, 94, 0.15)",
         borderColor: "var(--primary-color)",
-        boxShadow: "0 10px 30px rgba(59, 130, 246, 0.2)"
+        boxShadow: "0 10px 30px rgba(34, 197, 94, 0.2)"
       }}
     >
       <div className="skill-content">
@@ -40,17 +40,22 @@ const About = () => {
     { year: '2026', title: 'Estágio na Movement (Brudden)', description: 'Inovação: Discovery, prototipação e desenvolvimento mobile com Flutter.', type: 'Estágio' },
     { year: '2026', title: 'climAgro / CentralAgro', description: 'IA especializada para análise meteorológica agrícola.', type: 'Trabalho' },
     { year: '2025', title: 'Bolsista FAPESP', description: 'Pesquisa em automatização de cientometria e LLMs.', type: 'Pesquisa' },
-    { year: '2024', title: 'Campus Party 16', description: 'Bengala Multissensorial Canna em destaque.', type: 'Evento' },
+    { year: '2024', title: 'Técnico em Desenvolvimento', description: 'Conclusão do curso técnico na ETEC Massuyuki Kawano.', type: 'Formação' },
     { year: '2024', title: 'Samsung Top 20', description: 'Reconhecimento Nacional Solve for Tomorrow.', type: 'Prêmio' },
+    { year: '2024', title: 'Campus Party 16', description: 'Bengala Multissensorial Canna em destaque.', type: 'Evento' },
     { year: '2022', title: 'Bengala Canna', description: 'Início do projeto de tecnologia assistiva.', type: 'Idealização' },
   ];
 
   const skills = [
     { name: 'Flutter', category: 'Mobile' },
+    { name: 'Kotlin', category: 'Mobile' },
     { name: 'Python', category: 'Backend' },
     { name: 'FastAPI', category: 'API' },
+    { name: 'Node.js', category: 'Backend' },
     { name: 'React', category: 'Frontend' },
     { name: 'JavaScript', category: 'Dev' },
+    { name: 'SQL', category: 'Database' },
+    { name: 'NoSQL', category: 'Database' },
     { name: 'Gemini API', category: 'IA' },
     { name: 'LLMs', category: 'IA' },
     { name: 'Arduino', category: 'IoT' },
@@ -85,7 +90,7 @@ const About = () => {
 
             <div className="bio-content glass-card">
               <p>
-                Tecnólogo em <strong>Sistemas Inteligentes</strong> pela FATEC, com foco em 
+                <strong>Graduando em Sistemas Inteligentes</strong> pela FATEC, com foco em 
                 <strong> Inteligência Artificial</strong> aplicada a desafios sociais e produtivos.
               </p>
               

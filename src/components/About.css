@@ -10,7 +10,7 @@
   align-items: center;
   gap: 0.5rem;
   padding: 0.4rem 0.8rem;
-  background: rgba(59, 130, 246, 0.1);
+  background: rgba(34, 197, 94, 0.1);
   border-radius: 0.5rem;
   color: var(--primary-color);
   font-size: 0.75rem;
@@ -187,7 +187,7 @@
 }
 
 .timeline-item-interactive:hover .timeline-info {
-  background: rgba(59, 130, 246, 0.05);
+  background: rgba(34, 197, 94, 0.05);
   border-color: var(--primary-color);
   transform: translateX(10px);
 }
@@ -203,7 +203,7 @@
   font-size: 0.65rem;
   font-weight: 800;
   padding: 0.2rem 0.5rem;
-  background: rgba(59, 130, 246, 0.1);
+  background: rgba(34, 197, 94, 0.1);
   color: var(--primary-color);
   border-radius: 0.25rem;
   text-transform: uppercase;

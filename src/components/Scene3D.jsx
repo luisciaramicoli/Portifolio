@@ -25,7 +25,7 @@ const BackgroundShape = () => {
     <Float speed={2} rotationIntensity={0.2} floatIntensity={1}>
       <Sphere ref={meshRef} args={[1, 100, 100]} scale={2.5}>
         <MeshDistortMaterial
-          color="#3b82f6"
+          color="#22c55e"
           attach="material"
           distort={0.4}
           speed={1.5}
@@ -69,7 +69,7 @@ const Particles = ({ count = 100 }) => {
       </bufferGeometry>
       <pointsMaterial
         size={0.05}
-        color="#8b5cf6"
+        color="#14532d"
         transparent
         opacity={0.6}
         sizeAttenuation
@@ -92,8 +92,8 @@ const Scene3D = () => {
       <Canvas dpr={[1, 2]}>
         <PerspectiveCamera makeDefault position={[0, 0, 5]} fov={75} />
         <ambientLight intensity={0.5} />
-        <pointLight position={[10, 10, 10]} intensity={1.5} color="#3b82f6" />
-        <pointLight position={[-10, -10, -10]} intensity={1} color="#8b5cf6" />
+        <pointLight position={[10, 10, 10]} intensity={1.5} color="#22c55e" />
+        <pointLight position={[-10, -10, -10]} intensity={1} color="#14532d" />
         <spotLight position={[0, 5, 10]} angle={0.3} penumbra={1} intensity={2} />
         
         <Stars radius={100} depth={50} count={5000} factor={4} saturation={0} fade speed={1} />

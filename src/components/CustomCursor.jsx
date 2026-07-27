@@ -49,7 +49,7 @@ const CustomCursor = () => {
           x: mousePosition.x - 4,
           y: mousePosition.y - 4,
           scale: isHovered ? 2.5 : isText ? 1.5 : 1,
-          backgroundColor: isText ? '#8b5cf6' : '#3b82f6'
+          backgroundColor: isText ? '#14532d' : '#22c55e'
         }}
         transition={{ type: 'spring', damping: 30, stiffness: 500, mass: 0.5 }}
       />
@@ -60,7 +60,7 @@ const CustomCursor = () => {
           y: mousePosition.y - 16,
           scale: isHovered ? 1.8 : isText ? 0.5 : 1,
           opacity: isHovered ? 0.3 : 0.8,
-          borderColor: isText ? '#8b5cf6' : '#3b82f6'
+          borderColor: isText ? '#14532d' : '#22c55e'
         }}
         transition={{ type: 'spring', damping: 20, stiffness: 200, mass: 0.8 }}
       />
