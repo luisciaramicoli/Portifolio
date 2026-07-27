@@ -89,10 +89,17 @@ const About = () => {
             </motion.h2>
 
             <div className="bio-content glass-card">
-              <p>
-                <strong>Graduando em Sistemas Inteligentes</strong> pela FATEC, com foco em 
-                <strong> Inteligência Artificial</strong> aplicada a desafios sociais e produtivos.
-              </p>
+              <div className="bio-header" style={{ display: 'flex', alignItems: 'center', gap: '2rem', marginBottom: '2rem', flexWrap: 'wrap' }}>
+                <img 
+                  src="/perfil.jpg" 
+                  alt="Luis Ciaramicoli" 
+                  style={{ width: '120px', height: '120px', borderRadius: '50%', objectFit: 'cover', border: '3px solid var(--primary-color)', boxShadow: '0 0 20px var(--primary-glow)' }} 
+                />
+                <p style={{ margin: 0, flex: 1, minWidth: '200px' }}>
+                  <strong>Graduando em Sistemas Inteligentes</strong> pela FATEC, com foco em 
+                  <strong> Inteligência Artificial</strong> aplicada a desafios sociais e produtivos.
+                </p>
+              </div>
               
               <div className="stats-grid">
                 <div className="stat-item">
