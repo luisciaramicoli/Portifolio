@@ -1,10 +1,11 @@
-import { useRef } from 'react';
+import { useRef, lazy, Suspense } from 'react';
 import { motion, useMotionValue, useSpring, useTransform } from 'framer-motion';
-import { Github, Linkedin, GraduationCap, ArrowRight } from 'lucide-react';
-import Scene3D from './Scene3D';
+import { Github, Linkedin, GraduationCap, ArrowRight, Download } from 'lucide-react';
 import './Hero.css';
 
-const MagneticButton = ({ children, className, href }) => {
+const Scene3D = lazy(() => import('./Scene3D'));
+
+const MagneticButton = ({ children, className, href, download, target, rel }) => {
   const ref = useRef(null);
   const x = useMotionValue(0);
   const y = useMotionValue(0);
@@ -31,6 +32,9 @@ const MagneticButton = ({ children, className, href }) => {
     <motion.a
       ref={ref}
       href={href}
+      download={download}
+      target={target}
+      rel={rel}
       className={className}
       onMouseMove={handleMouseMove}
       onMouseLeave={handleMouseLeave}
@@ -48,7 +52,9 @@ const Hero = () => {
 
   return (
     <section id="hero" className="hero">
-      <Scene3D />
+      <Suspense fallback={<div style={{ position: 'absolute', top: 0, left: 0, width: '100%', height: '100%' }} />}>
+        <Scene3D />
+      </Suspense>
       <div className="spotlight"></div>
 
       <div className="hero-container section-container">
@@ -109,9 +115,13 @@ const Hero = () => {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 1.4 }}
+            style={{ display: 'flex', gap: '1rem', flexWrap: 'wrap' }}
           >
             <MagneticButton href="#projects" className="btn btn-primary">
               Ver Projetos <ArrowRight size={18} />
+            </MagneticButton>
+            <MagneticButton href="/curriculo.pdf" download="Currículo_Luis_Ciaramicoli.pdf" target="_blank" rel="noopener noreferrer" className="btn btn-primary" style={{ backgroundColor: 'transparent', border: '1px solid var(--primary-color)' }}>
+              Baixar Currículo <Download size={18} />
             </MagneticButton>
             <MagneticButton href="#contact" className="btn btn-outline">
               Contatar

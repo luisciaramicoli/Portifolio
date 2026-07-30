@@ -52,8 +52,10 @@ const Header = () => {
             </motion.a>
           ))}
           <motion.a 
-            href="/curriculo-luis.pdf" 
+            href="/curriculo.pdf"
+            download="Currículo_Luis_Ciaramicoli.pdf"
             target="_blank"
+            rel="noopener noreferrer"
             className="cv-button"
             initial={{ opacity: 0, scale: 0.9 }}
             animate={{ opacity: 1, scale: 1 }}
@@ -90,7 +92,7 @@ const Header = () => {
                   {link.name}
                 </a>
               ))}
-              <a href="/curriculo-luis.pdf" target="_blank" className="mobile-cv-button">Currículo PDF</a>
+              <a href="/curriculo.pdf" download="Currículo_Luis_Ciaramicoli.pdf" target="_blank" rel="noopener noreferrer" className="mobile-cv-button">Currículo PDF</a>
             </div>
           </motion.nav>
         )}
